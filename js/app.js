@@ -39,10 +39,21 @@ function showRoom(room) {
   const copy = template.cloneNode(true);
     //////////////////////////////////////////fills in the template/////////////////////////
       copy.querySelector(".type").textContent = room._embedded["wp:term"][0][0].name;
-    copy.querySelector(".img-room").src = room._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
+
       copy.querySelector(".roomnumber").textContent = room.title.rendered;
       copy.querySelector(".guestnumber").textContent = room.guestnumber;
      copy.querySelector(".facilities").textContent = room.facilities;
+
+    const roomDescription = copy.querySelector('#room-description');
+  if (roomDescription) {
+    roomDescription.innerHTML = room.description;
+  }
+
+       const roomImage =  copy.querySelector(".img-room")
+  if (roomImage) {
+    roomImage.src = room._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
+  }
+
 
   const a = copy.querySelector('a');
   if (a) {

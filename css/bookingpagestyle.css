@@ -10,6 +10,7 @@
      padding: 0;
      font-family: Arial, sans-serif;
      background-color: #FDF6EC;
+     overflow-x: hidden;
  }
 
  img {
@@ -266,7 +267,7 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
     }
     main{
 
-        margin:0 50px;
+        margin:0 110px;
     }
     header{
     display: flex;
