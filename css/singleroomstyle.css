@@ -1,0 +1,130 @@
+ @import url("https://use.typekit.net/cbc0qhs.css");
+
+ * {
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background-color: #FDF6EC;
+ }
+
+ img {
+     margin: 0;
+     max-width: 100%;
+     height: auto;
+ }
+
+ #wrapper {
+     margin: 2rem;
+ }
+ /********************************************************Navigation Start***************************/
+ header {
+     display: grid;
+     grid-template-columns: 100px 1fr;
+
+ }
+
+ header h1 {
+     background-image: url(../img/logo-BP.svg);
+     background-repeat: no-repeat;
+     width: 58px;
+     height: 61px;
+     text-indent: -9999999989px;
+ }
+nav{
+    position: absolute;
+    right:-100vw;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background-color: white;
+    transition: transform 2s;
+   overflow: hidden;
+
+}
+
+.move{
+    transform:translateX(-100vw);
+    overflow: hidden;
+
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color:#3E3445;
+
+   transition: color 2s;
+     margin-top: 4rem;
+     margin-left: 1rem;
+
+}
+
+nav a:hover{
+    color:aqua;
+    font-weight: bold;
+     overflow: hidden;
+}
+nav a .fisrtchild{
+     margin-top: 8rem;
+
+}
+
+
+  svg {
+       justify-self:right;
+     z-index: 10;
+     cursor: pointer;
+     width: 50px;
+       margin-top: 25px;}
+/****************************BURGER MENU*******************************/
+svg rect{
+    transition: all 0.3s;
+    transform-origin: center;
+}
+.open rect:first-child{
+  transform: translateY(30px);
+    opacity: 0;
+}
+.open rect:nth-child(2),
+.open rect:nth-child(3){
+    transition-delay: 0.3s;
+}
+rect:nth-child(2),
+rect:nth-child(3){
+    transition-delay: 0s;
+}
+.open rect:nth-child(2){
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+.open rect:nth-child(3){
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+.open rect:last-child{
+   /transform: translateY(-30px);
+     opacity: 0;
+}
+
+/****************************BURGER MENU END*******************************/
+     /********************************************************NavigationEnd***************************/
+
+/********************************************************Main Rooms Start***************************/
+
+ .room,
+ .box {
+     display: flex;
+     flex-flow: row;
+ }
+
+ .img-room {
+     margin: 0;
+     padding: 0;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+

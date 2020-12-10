@@ -22,6 +22,7 @@
      margin: 2rem;
  }
 
+
  /********************************************************Navigation Start***************************/
  header {
      display: grid;
@@ -44,24 +45,36 @@ nav{
     height:100vh;
     background-color: white;
     transition: transform 2s;
+   overflow: hidden;
 
 }
 
 .move{
     transform:translateX(-100vw);
+    overflow: hidden;
+
 }
 nav a{
     display: block;
     text-decoration: none;
-    margin-bottom: 1.5rem;
     color:#3E3445;
+
    transition: color 2s;
+     margin-top: 4rem;
+     margin-left: 1rem;
+
 }
 
 nav a:hover{
     color:aqua;
     font-weight: bold;
+     overflow: hidden;
 }
+nav a .fisrtchild{
+     margin-top: 8rem;
+
+}
+
 
   svg {
        justify-self:right;
@@ -99,7 +112,7 @@ rect:nth-child(3){
      opacity: 0;
 }
 
-/****************************BURGER MENU ENF*******************************/
+/****************************BURGER MENU END*******************************/
      /********************************************************NavigationEnd***************************/
 
 
@@ -108,50 +121,60 @@ rect:nth-child(3){
      font-weight: 400;
      font-style: normal;
      text-align: center;
- }
+     font-size: 4rem;
+}
+
 
  /********************************************************Book Your Stay Start***************************/
  .bookingform {
+
      margin-top: 2rem;
-     margin-bottom: 1rem;
-     border: solid 5px #3E3445;
+     margin-bottom: 2rem;
+border: solid 5px #3E3445;
      padding: 1rem;
      border-radius: 10px;
      box-shadow: inset 0 5px 10px #999;
 
- }
 
+
+ }
+/*.form{
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+}*/
  .inputgroup {
-     margin-bottom: 1.5rem;
+     margin: 0.5rem;
 
  }
 
  .input-label {
      display: block;
-     font-size: 1.3rem;
-     margin-bottom: 1rem;
+     font-size: 1rem;
+     margin-bottom: 0.5rem;
 
  }
 
  .input,
- .option {
-     outline: none;
-     width: 100%;
-     padding: 1rem;
+ .option
+{outline: none;
+     border: none;
+      padding: 1rem;
      color: darkgray;
      letter-spacing: 2px;
-     border: solid 3px #3E3445;
-     border-radius: 7px;
+width: 100%;
+
+
  }
 
  .searchbtn {
+     width: 100%;
+grid-column-end: 3;
+    grid-column-start: span 2;
      border-radius: 7px;
      background-color: #3E3445;
      outline: none;
      border: none;
-     width: 100%;
-    /* min-height: 4rem;*/
-     padding: 1rem;
+   padding: 1rem;
      letter-spacing: 2px;
      text-transform: uppercase;
      color: #FDF6EC;
@@ -162,8 +185,11 @@ rect:nth-child(3){
 
  main {
      display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
      gap: 1.5rem;
+     margin-top: 5rem;
+
+
  }
 
  .room,
@@ -172,13 +198,13 @@ rect:nth-child(3){
      flex-flow: column;
  }
 
- .out {
+ /*.out {
      border-top-left-radius: 10px;
      border-top-right-radius: 10px;
      overflow: hidden;
  }
-
- .figure-img {
+ */
+ .img-room {
      margin: 0;
      padding: 0;
      border-top-left-radius: 10px;
@@ -227,41 +253,54 @@ border: solid 3px #3E3445;
 /********************************************************Main Rooms End***************************/
 /********************************************************DESCTOP VRESION START***************************************************************/
 
-@media only screen and (min-width: 890px) {
+@media only screen and (min-width: 1035px) {
 body{
-        background-image: url(../img/booking-background.svg);
-    background-repeat:repeat;
-    }
+
+background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booking-image-for%20the-right.svg);
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat
+  }
+
     #wrapper{
-        margin: 0 10rem;
+        margin: 0 250px;
     }
-   header{
-         margin: 0 11.5rem;
-       display: grid;
-        grid: 1/-1;
+    main{
+
+        margin:0 50px;
+    }
+    header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
     }
 
   h2 {
      font-size:3.5rem;
- } /********************************************************DEsctop Navigation Start***************************/
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+ }
+    /********************************************************DEsctop Navigation Start***************************/
 
     svg{
     display: none;
 }
     nav{
     background: rgba(255, 255, 255, 0);
-      display: flex;
-       justify-content: space-around;
-      align-items:center;
-     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
     right:0;
     top:0;
     width:100vw;
     height:10vh;
     background-color: rgb(255, 255, 255. 0);
+    margin-top: 2rem;
 
 
-    }
+ }
+
 
   /********************************************************DEsctop NavigationEndt***************************/
  /******************************************************** Desctop Book Your Stay Start ***************************/
@@ -272,18 +311,20 @@ body{
 
      span {
         font-size: 1rem;}
-
+    .inputgroup{
+        width: 100%;
+    }
     .input-label{
         margin-bottom: 0.2rem;
+
     }
         .input,
- .option,
-    .select{
+ .option{
+
         padding: 0.3rem;
     }
     .searchbtn{
         max-width: 298px;
-        height: 86px;
 
     }}
     /******************************************************** Desctop Book Your Stay End***************************/

@@ -1,15 +1,29 @@
 window.addEventListener('DOMContentLoaded', getData);
 
-const datalink2 = "http://keep-it-simple.site/wp-json/wp/v2/room?_embed&orderby=count";
+//const datalink = "https://annadagbjort.dk/cms-theme/bikes/wp-json/wp/v2/bike?_embed"; - thanks ;-)
+const datalink2 = "http://keep-it-simple.site/wp-json/wp/v2/room?_embed";
 
-////////////////////////////////////////////////////////////////////////////WORDPRESS DATA///////////////////////////////////////////////////////
 function getData() {
-    ////fetch
-  //console.log('DOM fully loaded and parsed');
 
-  fetch(datalink2)
-    .then(res => res.json())
-    .then(handleData)
+  //console.log('DOM fully loaded and parsed');
+  const urlParams = new URLSearchParams(window.location.search);
+  console.log("URLSearchParams " + window.location);
+  const the_room_id = urlParams.get("room_id");
+
+  //our routing of the script
+  if (the_room_id) {
+    fetch("http://keep-it-simple.site/wp-json/wp/v2/room/" + the_room_id + "?_embed")
+      .then(res => res.json())
+      .then(showRoom) //skipping the ForEach loop - we only have one bike
+  } else if (!the_room_id && window.location.pathname == "singleroom.html") {
+    //alert("hello");
+    //https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage
+    window.location.replace("index.html");
+  } else {
+    fetch(datalink2)
+      .then(res => res.json())
+      .then(handleData)
+  }
 }
 ////////////////////////////////////////////////////loop//////////////////////////////////////////////
 function handleData(posts) {
@@ -30,6 +44,10 @@ function showRoom(room) {
       copy.querySelector(".guestnumber").textContent = room.guestnumber;
      copy.querySelector(".facilities").textContent = room.facilities;
 
+  const a = copy.querySelector('a');
+  if (a) {
+    a.href += room.id;
+  }
 
     ///////////////////////////////////////////////////////////appends the template///////////////////////////
   document.querySelector("main").appendChild(copy);
