@@ -1,0 +1,289 @@
+ @import url("https://use.typekit.net/cbc0qhs.css");
+
+ * {
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background-color: #FDF6EC;
+ }
+
+ img {
+     margin: 0;
+     max-width: 100%;
+     height: auto;
+ }
+
+ #wrapper {
+     margin: 2rem;
+ }
+
+ /********************************************************Navigation Start***************************/
+ header {
+     display: grid;
+     grid-template-columns: 100px 1fr;
+
+ }
+
+ header h1 {
+     background-image: url(../img/logo-BP.svg);
+     background-repeat: no-repeat;
+     width: 58px;
+     height: 61px;
+     text-indent: -9999999989px;
+ }
+nav{
+    position: absolute;
+    right:-100vw;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background-color: white;
+    transition: transform 2s;
+
+}
+
+.move{
+    transform:translateX(-100vw);
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    color:#3E3445;
+   transition: color 2s;
+}
+
+nav a:hover{
+    color:aqua;
+    font-weight: bold;
+}
+
+  svg {
+       justify-self:right;
+     z-index: 10;
+     cursor: pointer;
+     width: 50px;
+       margin-top: 25px;}
+/****************************BURGER MENU*******************************/
+svg rect{
+    transition: all 0.3s;
+    transform-origin: center;
+}
+.open rect:first-child{
+  transform: translateY(30px);
+    opacity: 0;
+}
+.open rect:nth-child(2),
+.open rect:nth-child(3){
+    transition-delay: 0.3s;
+}
+rect:nth-child(2),
+rect:nth-child(3){
+    transition-delay: 0s;
+}
+.open rect:nth-child(2){
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+.open rect:nth-child(3){
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+.open rect:last-child{
+   /transform: translateY(-30px);
+     opacity: 0;
+}
+
+/****************************BURGER MENU ENF*******************************/
+     /********************************************************NavigationEnd***************************/
+
+
+ h2 {
+     font-family: calder-dark-grit, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     text-align: center;
+ }
+
+ /********************************************************Book Your Stay Start***************************/
+ .bookingform {
+     margin-top: 2rem;
+     margin-bottom: 1rem;
+     border: solid 5px #3E3445;
+     padding: 1rem;
+     border-radius: 10px;
+     box-shadow: inset 0 5px 10px #999;
+
+ }
+
+ .inputgroup {
+     margin-bottom: 1.5rem;
+
+ }
+
+ .input-label {
+     display: block;
+     font-size: 1.3rem;
+     margin-bottom: 1rem;
+
+ }
+
+ .input,
+ .option {
+     outline: none;
+     width: 100%;
+     padding: 1rem;
+     color: darkgray;
+     letter-spacing: 2px;
+     border: solid 3px #3E3445;
+     border-radius: 7px;
+ }
+
+ .searchbtn {
+     border-radius: 7px;
+     background-color: #3E3445;
+     outline: none;
+     border: none;
+     width: 100%;
+    /* min-height: 4rem;*/
+     padding: 1rem;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+     color: #FDF6EC;
+ }
+
+ /********************************************************Book Your Stay End***************************/
+/********************************************************Main Rooms Start***************************/
+
+ main {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+     gap: 1.5rem;
+ }
+
+ .room,
+ .box {
+     display: flex;
+     flex-flow: column;
+ }
+
+ .out {
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     overflow: hidden;
+ }
+
+ .figure-img {
+     margin: 0;
+     padding: 0;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+
+ .room {
+     max-height: 500px;
+     background: #fff;
+     border-radius: 10px;
+     box-shadow: 3px 3px 6px #999;
+ }
+
+ .box {
+     display: grid;
+    grid-template-columns: 3fr 1fr;
+     padding:0.5rem 1rem;
+ }
+
+.box p, h3{
+   margin: 0.2rem 0;
+    color:#3E3445;
+}
+.box h3{
+    font-size: 1.5rem;
+}
+.box p{
+    font-size: 0.9rem;
+}
+.reservebtn{
+border: solid 3px #3E3445;
+      box-shadow: inset 0 5px 10px #999;
+     border-radius: 7px;
+     max-height: 3rem;
+     padding: 1rem;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+.reservebtn a{
+
+    font-weight: bold;
+     color: #3E3445;
+    text-decoration: none;
+}
+/********************************************************Main Rooms End***************************/
+/********************************************************DESCTOP VRESION START***************************************************************/
+
+@media only screen and (min-width: 890px) {
+body{
+        background-image: url(../img/booking-background.svg);
+    background-repeat:repeat;
+    }
+    #wrapper{
+        margin: 0 10rem;
+    }
+   header{
+         margin: 0 11.5rem;
+       display: grid;
+        grid: 1/-1;
+    }
+
+  h2 {
+     font-size:3.5rem;
+ } /********************************************************DEsctop Navigation Start***************************/
+
+    svg{
+    display: none;
+}
+    nav{
+    background: rgba(255, 255, 255, 0);
+      display: flex;
+       justify-content: space-around;
+      align-items:center;
+     position: absolute;
+    right:0;
+    top:0;
+    width:100vw;
+    height:10vh;
+    background-color: rgb(255, 255, 255. 0);
+
+
+    }
+
+  /********************************************************DEsctop NavigationEndt***************************/
+ /******************************************************** Desctop Book Your Stay Start ***************************/
+    .form{
+        display: flex;
+       justify-content: space-around;
+      align-items:center;    }
+
+     span {
+        font-size: 1rem;}
+
+    .input-label{
+        margin-bottom: 0.2rem;
+    }
+        .input,
+ .option,
+    .select{
+        padding: 0.3rem;
+    }
+    .searchbtn{
+        max-width: 298px;
+        height: 86px;
+
+    }}
+    /******************************************************** Desctop Book Your Stay End***************************/
