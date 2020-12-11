@@ -59,8 +59,7 @@ nav a{
     display: block;
     text-decoration: none;
     color:#3E3445;
-
-   transition: color 2s;
+ transition: color 2s;
      margin-top: 4rem;
      margin-left: 1rem;
 
@@ -72,7 +71,7 @@ nav a:hover{
      overflow: hidden;
 }
 nav a .fisrtchild{
-     margin-top: 8rem;
+     margin-top: 10rem;
 
 }
 
@@ -82,7 +81,8 @@ nav a .fisrtchild{
      z-index: 10;
      cursor: pointer;
      width: 50px;
-       margin-top: 25px;}
+       margin-top: 25px;
+}
 /****************************BURGER MENU*******************************/
 svg rect{
     transition: all 0.3s;
@@ -206,7 +206,7 @@ grid-column-end: 3;
  }
  */
  .img-room {
-     margin: 0;
+     margin: 1;
      padding: 0;
      border-top-left-radius: 10px;
      border-top-right-radius: 10px;
@@ -269,12 +269,7 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
 
         margin:0 110px;
     }
-    header{
-    display: flex;
-    justify-content: center;
-    align-items:center;
 
-    }
 
   h2 {
      font-size:3.5rem;
@@ -282,7 +277,12 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
         margin-bottom: 5rem;
  }
     /********************************************************DEsctop Navigation Start***************************/
+ header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
 
+    }
     svg{
     display: none;
 }
@@ -295,7 +295,7 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
     right:0;
     top:0;
     width:100vw;
-    height:10vh;
+    height:13vh;
     background-color: rgb(255, 255, 255. 0);
     margin-top: 2rem;
 

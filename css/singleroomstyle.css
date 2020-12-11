@@ -15,6 +15,7 @@
 
  img {
      margin: 0;
+     padding: 0;
      max-width: 100%;
      height: auto;
  }
@@ -26,6 +27,7 @@
  header {
      display: grid;
      grid-template-columns: 100px 1fr;
+     margin: 2rem;
 
  }
 
@@ -59,9 +61,8 @@ nav a{
     color:#3E3445;
 
    transition: color 2s;
-     margin-top: 4rem;
-     margin-left: 1rem;
-
+   margin-left: 1rem;
+  margin-top: 4rem;
 }
 
 nav a:hover{
@@ -69,11 +70,6 @@ nav a:hover{
     font-weight: bold;
      overflow: hidden;
 }
-nav a .fisrtchild{
-     margin-top: 8rem;
-
-}
-
 
   svg {
        justify-self:right;
@@ -114,7 +110,7 @@ rect:nth-child(3){
 /****************************BURGER MENU END*******************************/
      /********************************************************NavigationEnd***************************/
 
-/********************************************************Main Rooms Start***************************/
+/********************************************************Single Room Start***************************/
 
 .roomnumber{
     font-size: 3rem;
@@ -132,17 +128,78 @@ rect:nth-child(3){
      padding: 0.5rem;
      border-radius: 10px;
    }
-
+/********************************************************Single Rooms End***************************/
+/********************************************************Pictures Start***************************/
  .img-room {
-     margin: 0;
-     padding: 0;
+     margin-: 0;
+
      border-radius: 10px;
-     width: 20vw;
+     margin-bottom: 1rem;
+
+}
+.pictures-display{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/********************************************************Pictures End***************************/
+/********************************************************DESCTOP VRESION START***************************************************************/
+
+@media only screen and (min-width: 1035px) {
+    @media only screen and (min-width: 1035px) {
+body{
+    background-image: url(../img/single-room-background.svg);
+  background-repeat: no-repeat;
+  }
+
+    #wrapper{
+        background: rgba(255, 255, 255, 0.7);
+
+        margin: 200px 125px 0;
+    }
+        main{
+            margin-top: 100px;
+        }
+      main, .pictures{
+             margin-left: 125px ;
+             margin-right: 125px;
+        }
+    /********************************************************DEsctop Navigation Start***************************/
+ header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+
+    }
+    svg{
+    display: none;
+}
+
+    nav{
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    right:0;
+    top:0;
+    width:100vw;
+    height:13vh;
+    background-color: rgb(255, 255, 255. 0);
+    margin-top: 2rem;
 
 
  }
-.pictures-display{
-      display:flex;
-     flex-direction: row;
-    justify-content: space-between;}
+
+
+  /********************************************************DEsctop NavigationEndt***************************/
+.img-room {
+
+    width: 20vw;
+    }}
+
+/********************************************************DESCTOP VRESION END***************************************************************/
+
 
