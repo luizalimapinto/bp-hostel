@@ -14,8 +14,7 @@
  }
 
  img {
-     margin: 0;
-     padding: 0;
+
      max-width: 100%;
      height: auto;
  }
@@ -29,6 +28,7 @@
      grid-template-columns: 100px 1fr;
      margin: 2rem;
 
+
  }
 
  header h1 {
@@ -37,6 +37,9 @@
      width: 58px;
      height: 61px;
      text-indent: -9999999989px;
+     margin: 0;
+     padding: 0;
+
  }
 nav{
     position: absolute;
@@ -131,22 +134,21 @@ rect:nth-child(3){
 /********************************************************Single Rooms End***************************/
 /********************************************************Pictures Start***************************/
  .img-room {
-     margin-: 0;
+     margin: 0;
 
      border-radius: 10px;
      margin-bottom: 1rem;
 
 }
 .pictures-display{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+     gap: 1.5rem;
+     margin-top: 5rem;
 }
 /********************************************************Pictures End***************************/
 /********************************************************DESCTOP VRESION START***************************************************************/
 
-@media only screen and (min-width: 1035px) {
     @media only screen and (min-width: 1035px) {
 body{
     background-image: url(../img/single-room-background.svg);
@@ -161,7 +163,8 @@ body{
         main{
             margin-top: 100px;
         }
-      main, .pictures{
+      main,
+        .pictures{
              margin-left: 125px ;
              margin-right: 125px;
         }
@@ -191,14 +194,11 @@ body{
     margin-top: 2rem;
 
 
- }
+        }}
 
 
   /********************************************************DEsctop NavigationEndt***************************/
-.img-room {
 
-    width: 20vw;
-    }}
 
 /********************************************************DESCTOP VRESION END***************************************************************/
 
