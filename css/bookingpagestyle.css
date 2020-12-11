@@ -288,20 +288,28 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
 
 .logo{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items:center;
-
-
-    }
+}
 
 nav,
 svg{
     display: none;
     }
     .desc-nav{
-    font-size: 45px;
-    }
+    font-size: 1.5rem;
+        text-decoration: none;
+    color:#3E3445;
+
+}
+
+    .desc-nav:hover{
+    color:#ED4255;
+    font-weight: 600;
+
+}
 /*
+
     nav{
     background: rgba(255, 255, 255, 0);
     display: flex;

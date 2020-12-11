@@ -10,7 +10,7 @@
      padding: 0;
      font-family: Arial, sans-serif;
      background-color: #FDF6EC;
-      overflow-x: hidden;
+     overflow-x: hidden;
  }
 
  img {
@@ -19,16 +19,15 @@
      height: auto;
  }
 
- #wrapper {
+     #ramka {
      margin: 2rem;
  }
- /********************************************************Navigation Start***************************/
+
+ /*******************************************************Navigation Start***************************/
  header {
      display: grid;
      grid-template-columns: 100px 1fr;
-     margin: 2rem;
-
-
+     margin: 2rem 1rem 0;
  }
 
  header h1 {
@@ -41,165 +40,197 @@
      padding: 0;
 
  }
-nav{
-    position: absolute;
-    right:-100vw;
-    top:0;
-    width:100vw;
-    height:100vh;
-    background-color: white;
-    transition: transform 2s;
-   overflow: hidden;
 
-}
+ .desc-nav {
 
-.move{
-    transform:translateX(-100vw);
-    overflow: hidden;
+     font-size: 0;
+ }
 
-}
-nav a{
-    display: block;
-    text-decoration: none;
-    color:#3E3445;
-
-   transition: color 2s;
-   margin-left: 1rem;
-  margin-top: 4rem;
-}
-
-nav a:hover{
-    color:aqua;
-    font-weight: bold;
-     overflow: hidden;
-}
-
-  svg {
-       justify-self:right;
+ svg {
+     justify-self: right;
      z-index: 10;
      cursor: pointer;
      width: 50px;
-       margin-top: 25px;}
-/****************************BURGER MENU*******************************/
-svg rect{
-    transition: all 0.3s;
-    transform-origin: center;
-}
-.open rect:first-child{
-  transform: translateY(30px);
-    opacity: 0;
-}
-.open rect:nth-child(2),
-.open rect:nth-child(3){
-    transition-delay: 0.3s;
-}
-rect:nth-child(2),
-rect:nth-child(3){
-    transition-delay: 0s;
-}
-.open rect:nth-child(2){
-    transform: rotate(45deg);
-    transform-origin: center;
-}
-.open rect:nth-child(3){
-    transform: rotate(-45deg);
-    transform-origin: center;
-}
-.open rect:last-child{
-   /transform: translateY(-30px);
+     margin-top: 25px;
+ }
+
+ nav {
+     position: absolute;
+     right: -100vw;
+     top: 0;
+     width: 100vw;
+     height: 100vh;
+     background-color: white;
+     transition: transform 2s;
+     overflow: hidden;
+
+
+ }
+
+ #booking {
+     margin-top: 6rem;
+ }
+
+ .move {
+     transform: translateX(-100vw);
+     overflow: hidden;
+ }
+
+ nav a {
+     display: block;
+     text-decoration: none;
+     color: #3E3445;
+     margin-top: 4rem;
+     margin-left: 1rem;
+
+ }
+
+ nav a:hover {
+     color: #ED4255;
+     font-weight: 600;
+     overflow: hidden;
+ }
+
+
+ /****************************BURGER MENU*******************************/
+ svg rect {
+     transition: all 0.3s;
+     transform-origin: center;
+ }
+
+ .open rect:first-child {
+     transform: translateY(30px);
      opacity: 0;
-}
+ }
 
-/****************************BURGER MENU END*******************************/
-     /********************************************************NavigationEnd***************************/
+ .open rect:nth-child(2),
+ .open rect:nth-child(3) {
+     transition-delay: 0.3s;
+ }
 
-/********************************************************Single Room Start***************************/
+ rect:nth-child(2),
+ rect:nth-child(3) {
+     transition-delay: 0s;
+ }
 
-.roomnumber{
-    font-size: 3rem;
+ .open rect:nth-child(2) {
+     transform: rotate(45deg);
+     transform-origin: center;
+ }
+
+ .open rect:nth-child(3) {
+     transform: rotate(-45deg);
+     transform-origin: center;
+ }
+
+ .open rect:last-child {
+     /transform: translateY(-30px);
+     opacity: 0;
+ }
+
+ /****************************BURGER MENU END*******************************/
+ /********************************************************NavigationEnd***************************/
+
+ /********************************************************Single Room Start***************************/
+
+ .roomnumber {
+     font-size: 3rem;
      font-family: calder-dark-grit, sans-serif;
      font-weight: 400;
      font-style: normal;
-}
+ }
+
  .box {
-     display:flex;
+     display: flex;
      flex-direction: row;
      margin: auto;
-      }
-.box p{
-    border: solid 5px #3E3445;
+ }
+
+ .box p {
+     border: solid 5px #3E3445;
      padding: 0.5rem;
      border-radius: 10px;
-   }
-/********************************************************Single Rooms End***************************/
-/********************************************************Pictures Start***************************/
+ }
+
+ /********************************************************Single Rooms End***************************/
+ /********************************************************Pictures Start***************************/
  .img-room {
      margin: 0;
 
      border-radius: 10px;
      margin-bottom: 1rem;
 
-}
-.pictures-display{
-    display: grid;
+ }
+
+ .pictures-display {
+     display: grid;
      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
      gap: 1.5rem;
      margin-top: 5rem;
-}
-/********************************************************Pictures End***************************/
-/********************************************************DESCTOP VRESION START***************************************************************/
+ }
 
-    @media only screen and (min-width: 1035px) {
-body{
-    background-image: url(../img/single-room-background.svg);
-  background-repeat: no-repeat;
-  }
+ /********************************************************Pictures End***************************/
+ /********************************************************DESCTOP VRESION START***************************************************************/
 
-    #wrapper{
-        background: rgba(255, 255, 255, 0.7);
+ @media only screen and (min-width: 1035px) {
+     body {
+         background-image: url(../img/single-room-background.svg);
+         background-repeat: no-repeat;
+     }
 
-        margin: 200px 125px 0;
-    }
-        main{
-            margin-top: 100px;
-        }
-      main,
-        .pictures{
-             margin-left: 125px ;
-             margin-right: 125px;
-        }
-    /********************************************************DEsctop Navigation Start***************************/
- header{
-    display: flex;
-    justify-content: center;
-    align-items:center;
+    #ramka {
+         background: rgba(255, 255, 255, 0.7);
+         margin: 200px 125px 0;
+     }
+
+     main {
+         margin-top: 100px;
+     }
+     h3{
+         padding-top: 2rem;
+     }
+
+     main,
+     .pictures {
+         margin-left: 125px;
+         margin-right: 125px;
+     }
+
+     /********************************************************DEsctop Navigation Start***************************/
+     /********************************************************DEsctop Navigation Start***************************/
+
+     header {
+         display: block;
+         margin: 2rem 250px 0;
+     }
+
+     .logo {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+
+     nav,
+     svg {
+         display: none;
+     }
+
+     .desc-nav {
+         font-size: 1.5rem;
+         text-decoration: none;
+         color: #3E3445;
+
+     }
+
+     .desc-nav:hover {
+         color: #ED4255;
+         font-weight: 600;
+
+     }
+ }
 
 
-    }
-    svg{
-    display: none;
-}
-
-    nav{
-    background: rgba(255, 255, 255, 0);
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    position: absolute;
-    right:0;
-    top:0;
-    width:100vw;
-    height:13vh;
-    background-color: rgb(255, 255, 255. 0);
-    margin-top: 2rem;
+ /********************************************************DEsctop NavigationEndt***************************/
 
 
-        }}
-
-
-  /********************************************************DEsctop NavigationEndt***************************/
-
-
-/********************************************************DESCTOP VRESION END***************************************************************/
-
-
+ /********************************************************DESCTOP VRESION END***************************************************************/
