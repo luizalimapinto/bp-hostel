@@ -23,9 +23,8 @@
      margin: 2rem;
  }
 
-
- /********************************************************Navigation Start***************************/
- header {
+ /*******************************************************Navigation Start***************************/
+header {
      display: grid;
      grid-template-columns: 100px 1fr;
 
@@ -37,7 +36,22 @@
      width: 58px;
      height: 61px;
      text-indent: -9999999989px;
+     margin: 0;
+        padding: 0;
+
  }
+
+    .desc-nav{
+
+    font-size: 0;
+}
+  svg {
+       justify-self:right;
+     z-index: 10;
+     cursor: pointer;
+     width: 50px;
+       margin-top: 25px;
+}
 nav{
     position: absolute;
     right:-100vw;
@@ -48,41 +62,31 @@ nav{
     transition: transform 2s;
    overflow: hidden;
 
-}
 
+}
+#booking{
+       margin-top: 6rem;
+}
 .move{
     transform:translateX(-100vw);
-    overflow: hidden;
+    overflow: hidden;}
 
-}
-nav a{
+nav a {
     display: block;
     text-decoration: none;
     color:#3E3445;
- transition: color 2s;
-     margin-top: 4rem;
+    margin-top: 4rem;
      margin-left: 1rem;
 
 }
 
 nav a:hover{
-    color:aqua;
-    font-weight: bold;
+    color:#ED4255;
+    font-weight: 600;
      overflow: hidden;
 }
-nav a .fisrtchild{
-     margin-top: 10rem;
-
-}
 
 
-  svg {
-       justify-self:right;
-     z-index: 10;
-     cursor: pointer;
-     width: 50px;
-       margin-top: 25px;
-}
 /****************************BURGER MENU*******************************/
 svg rect{
     transition: all 0.3s;
@@ -263,7 +267,7 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
   }
 
     #wrapper{
-        margin: 0 250px;
+        margin:2rem 250px 0;
     }
     main{
 
@@ -277,15 +281,27 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
         margin-bottom: 5rem;
  }
     /********************************************************DEsctop Navigation Start***************************/
- header{
+
+    header{
+        display: block;
+    }
+
+.logo{
     display: flex;
     justify-content: center;
     align-items:center;
 
+
     }
-    svg{
+
+nav,
+svg{
     display: none;
-}
+    }
+    .desc-nav{
+    font-size: 45px;
+    }
+/*
     nav{
     background: rgba(255, 255, 255, 0);
     display: flex;
@@ -301,7 +317,7 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
 
 
  }
-
+*/
 
   /********************************************************DEsctop NavigationEndt***************************/
  /******************************************************** Desctop Book Your Stay Start ***************************/
