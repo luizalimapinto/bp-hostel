@@ -1,0 +1,497 @@
+@import url("https://use.typekit.net/cbc0qhs.css");
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+ background-color: #FDF6EC;
+    overflow-x: hidden;
+    /* background: linear-gradient(180deg, #fdcd3b 60%, #ffed4b 60%);
+      background-repeat:repeat;*/
+}
+
+img {
+
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*******************************************************Navigation Start***************************/
+
+
+header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin: 2rem 1rem 0;
+}
+
+header h1 {
+    background-image: url(../img/logo-BP.svg);
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 61px;
+    text-indent: -9999999989px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.desc-nav {
+
+    font-size: 0;
+}
+
+svg {
+    justify-self: right;
+    z-index: 10;
+    cursor: pointer;
+    width: 50px;
+    margin-top: 25px;
+}
+
+nav {
+    position: absolute;
+    right: -100vw;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    transition: transform 2s;
+    overflow: hidden;
+    color:#FDF6EC;
+
+
+}
+
+#booking {
+    margin-top: 6rem;
+}
+
+.move {
+    transform: translateX(-100vw);
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #3E3445;
+    margin-top: 4rem;
+    margin-left: 1rem;
+
+}
+
+nav a:hover {
+    color: #ED4255;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+
+/****************************BURGER MENU*******************************/
+svg rect {
+    transition: all 0.3s;
+    transform-origin: center;
+}
+
+.open rect:first-child {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.open rect:nth-child(2),
+.open rect:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+rect:nth-child(2),
+rect:nth-child(3) {
+    transition-delay: 0s;
+}
+
+.open rect:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.open rect:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+.open rect:last-child {
+    /transform: translateY(-30px);
+    opacity: 0;
+}
+
+/****************************BURGER MENU END*******************************/
+/********************************************************NavigationEnd***************************/
+
+
+
+h2 {
+    font-family: calder-dark-grit, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 2rem;
+
+
+}
+
+.explore-more {
+
+    border-radius: 7px;
+    border: solid 3px #3E3445;
+    padding: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+ background-color: transparent;
+    cursor: pointer;
+    margin: 1rem;
+    font-family: calder-dark-grit, sans-serif;
+
+}
+
+/********************************************************Book Your Stay Start***************************/
+
+
+.bookyourstay h2{
+    font-size: 2rem;
+ color: #FAEDDB;
+}
+
+
+.bookingform {
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    border: solid 5px #FAEDDB;
+    padding: 1rem;
+    border-radius: 10px;
+background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*.form{
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+}*/
+.inputgroup {
+    margin: 0.5rem;
+
+}
+
+.input-label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+color:#FDF6EC;
+}
+
+.input,
+.option {
+    outline: none;
+    border: none;
+    padding: 1rem;
+    color: darkgray;
+    letter-spacing: 2px;
+    width: 100%;
+
+
+}
+
+.searchbtn {
+    width: 100%;
+    grid-column-end: 3;
+    grid-column-start: span 2;
+    border-radius: 7px;
+    background-color: #FDF6EC;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#3E3445 ;
+}
+
+/********************************************************Book Your Stay End***************************/
+    /******************************************************** Main Start***************************/
+
+
+    #welcome-to-jungle {
+    text-align: center;
+       padding: 17vw 1rem 5vw;
+    }
+
+
+    #rooms-facilities,
+    #testimonials,
+    #concierge-services {
+    text-align: center;
+       padding: 5vw 1rem 5vw;
+    }
+
+   #welcome-to-jungle {
+        background-color: #FFC83C;
+
+    }
+
+    #rooms-facilities {
+        background-color: #FDF6EC;
+
+    }
+
+    #testimonials {
+        background-color: #FFC83C;
+        border-top-right-radius: 10rem;
+    }
+
+    #concierge-services {
+        background-color: #FDF6EC;
+    }
+
+.main-page-room-picture{
+    max-height: 510px;
+    border-radius: 35px;
+}
+
+.test{
+
+    background-color:#FDF6EC;
+    margin: 1rem;
+    padding: 1.3rem;
+    border-radius: 35px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.reviev{
+    text-align: left;
+}
+.concierge-flex-box{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+    align-items: center;
+}
+.concierge-flex-box a{
+    margin:0 100px 0;
+    text-decoration: none;
+    color:#3E3445;
+}
+
+    /******************************************************** Desctop Leaf picturesStart ***************************/
+
+
+
+    .second-image
+    {
+        background: linear-gradient(180deg, #FFC83C 50%, #FDF6EC 50%);
+      background-repeat: no-repeat;
+
+
+    }
+
+
+/******************************************************** Desctop Leaf picturesStart ***************************/
+    /******************************************************** Main End***************************/
+
+
+/************************************************************************DESCTOP VRESION START*******************************************************************/
+
+@media only screen and (min-width: 1035px) {
+    body {
+        background: url(../img/poster2.svg);
+        background-repeat: no-repeat;
+
+    }
+
+
+    /********************************************************DEsctop Navigation Start***************************/
+    /********************************************************DEsctop Navigation Start***************************/
+
+    #header-wrapper{
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+    header {
+
+        display: block;
+        margin: 2rem 250px 0;
+
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    header h1 {
+    background-image: url(../img/logo-large.svg);
+    background-repeat: no-repeat;
+    width:146px;
+    height: 155px;
+    text-indent: -9999999989px;
+    margin: 10px;
+    padding: 0;
+
+}
+
+    nav,
+    svg {
+        display: none;
+    }
+
+    .desc-nav {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #FAEDDB;
+
+    }
+
+    .desc-nav:hover {
+        color: #ED4255;
+        font-weight: 600;
+
+    }
+
+
+
+    /********************************************************DEsctop NavigationEndt***************************/
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size:4rem;
+    }
+
+    /******************************************************** Desctop Book Your Stay Start ***************************/
+
+    .bookyourstay {
+    margin: 39rem 250px 0;
+
+
+}
+
+    .form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+
+    .inputgroup {
+        width: 100%;
+    }
+
+    .input-label {
+        margin-bottom: 0.2rem;
+
+    }
+
+    .input,
+    .option {
+
+        padding: 0.3rem;
+    }
+
+    .searchbtn {
+        max-width: 298px;
+
+    }
+
+    /******************************************************** Desctop Book Your Stay End***************************/
+    /******************************************************** Desctop Main Start***************************/
+   /* #welcome-to-jungle-wrapper {
+        background-color: #FFC83C;
+
+    }
+
+    #rooms-facilities-wrapper {
+        background-color: #FDF6EC;
+
+    }
+
+    #testimonials-wrapper {
+        background-color: #FFC83C;
+        border-top-right-radius: 10rem;
+    }
+
+    #concierge-services-wrapper {
+        background-color: #FDF6EC;
+    }
+*/
+
+
+    #welcome-to-jungle {
+    text-align: center;
+       padding: 17vw 20vw 5vw;
+    }
+
+
+    #rooms-facilities,
+    #testimonials,
+    #concierge-services {
+    text-align: center;
+       padding: 5vw 20vw 5vw;
+    }
+
+    #rooms-facilities{
+        display: grid;
+        grid-template-columns:  600px 1fr;
+
+        text-align: left;
+    }
+    #rooms-facilities h2{
+        text-align: left;
+    }
+.float-right .main-page-room-picture{
+   float: right;
+}
+.test{
+     display: grid;
+    grid-template-columns:  180px 1fr;
+
+}
+    .testimonials-container{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+
+}
+    /******************************************************** Desctop Main End***************************/
+    /******************************************************** Desctop Leaf picturesStart ***************************/
+
+    .fisrt-image {
+
+        position: absolute;
+        top: 35vw;
+        left: 40vw;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+
+
+    .third-image{
+
+        position: absolute;
+       top: 200vw;
+        left: -40vw;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+}
+
+
+/******************************************************** Desctop Leaf picturesStart ***************************/
+/********************************************************DESCTOP VRESION END***************************************************************/

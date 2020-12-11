@@ -124,7 +124,7 @@
  }
 
  .open rect:last-child {
-     /transform: translateY(-30px);
+     transform: translateY(-30px);
      opacity: 0;
  }
 
@@ -178,8 +178,8 @@
          background-repeat: no-repeat;
      }
 
-    #ramka {
-         background: rgba(255, 255, 255, 0.7);
+    #packge {
+         background: rgba(255, 255, 255, 0.8);
          margin: 200px 125px 0;
      }
 
@@ -209,7 +209,16 @@
          justify-content: space-between;
          align-items: center;
      }
+ header h1 {
+    background-image: url(../img/logo-large-dark.svg);
+    background-repeat: no-repeat;
+    width:146px;
+    height: 155px;
+    text-indent: -9999999989px;
+    margin: 10px;
+    padding: 0;
 
+}
      nav,
      svg {
          display: none;

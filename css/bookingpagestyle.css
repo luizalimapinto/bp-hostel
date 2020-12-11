@@ -138,7 +138,7 @@ rect:nth-child(3){
 border: solid 5px #3E3445;
      padding: 1rem;
      border-radius: 10px;
-     box-shadow: inset 0 5px 10px #999;
+     box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
 
 
 
@@ -291,7 +291,16 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
     justify-content: space-between;
     align-items:center;
 }
+ header h1 {
+    background-image: url(../img/logo-large-dark.svg);
+    background-repeat: no-repeat;
+    width:146px;
+    height: 155px;
+    text-indent: -9999999989px;
+    margin: 10px;
+    padding: 0;
 
+}
 nav,
 svg{
     display: none;
