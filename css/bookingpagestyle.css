@@ -161,15 +161,16 @@ border: solid 5px #3E3445;
 
  .input,
  .option
-{outline: none;
+{
+    outline: none;
      border: none;
       padding: 1rem;
      color: darkgray;
      letter-spacing: 2px;
 width: 100%;
+}
 
 
- }
 
  .searchbtn {
      width: 100%;
@@ -190,7 +191,7 @@ grid-column-end: 3;
 
  main {
      display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
      gap: 1.5rem;
      margin-top: 5rem;
 
@@ -271,7 +272,7 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
     }
     main{
 
-        margin:0 110px;
+        margin:0 70px;
     }
 
 

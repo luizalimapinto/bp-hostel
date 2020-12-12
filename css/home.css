@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
- background-color: #FDF6EC;
+ background-color:#FDF6EC;
     overflow-x: hidden;
     /* background: linear-gradient(180deg, #fdcd3b 60%, #ffed4b 60%);
       background-repeat:repeat;*/
@@ -161,11 +161,10 @@ h2 {
 
 /********************************************************Book Your Stay Start***************************/
 
-
 .bookyourstay h2{
     font-size: 2rem;
  color: #FAEDDB;
-}
+   }
 
 
 .bookingform {
@@ -178,7 +177,9 @@ h2 {
     border-radius: 10px;
 background-color: rgba(0, 0, 0, 0.3);
 }
-
+.form{
+     z-index: 200;
+}
 /*.form{
     display: grid;
      grid-template-columns: 1fr 1fr;
@@ -259,8 +260,9 @@ color:#FDF6EC;
 
 .main-page-room-picture{
     max-height: 510px;
-    border-radius: 35px;
+    border-radius: 2rem;
 }
+
 
 .test{
 
@@ -269,11 +271,16 @@ color:#FDF6EC;
     padding: 1.3rem;
     border-radius: 35px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
-}
 
-.reviev{
-    text-align: left;
+
 }
+.reviev{
+font-size:small;
+ max-height: 168px;
+     overflow: hidden;
+   text-align: left;
+
+    }
 .concierge-flex-box{
     display: flex;
     flex-wrap: wrap;
@@ -281,7 +288,7 @@ justify-content: center;
     align-items: center;
 }
 .concierge-flex-box a{
-    margin:0 100px 0;
+    margin:0 3.5rem 0;
     text-decoration: none;
     color:#3E3445;
 }
@@ -306,10 +313,12 @@ justify-content: center;
 /************************************************************************DESCTOP VRESION START*******************************************************************/
 
 @media only screen and (min-width: 1035px) {
-    body {
-        background: url(../img/poster2.svg);
-        background-repeat: no-repeat;
+   body{
 
+
+background: url(../img/poster2.svg), linear-gradient(180deg, #FFC83C 30%, rgba(0, 0, 0, 0) 30%);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
 
@@ -353,12 +362,12 @@ justify-content: center;
         font-size: 1.5rem;
         text-decoration: none;
         color: #FAEDDB;
+        transition: all 0.5s ease-in-out;
 
     }
 
     .desc-nav:hover {
         color: #ED4255;
-        font-weight: 600;
 
     }
 
@@ -374,7 +383,8 @@ justify-content: center;
     /******************************************************** Desctop Book Your Stay Start ***************************/
 
     .bookyourstay {
-    margin: 39rem 250px 0;
+    margin: 25rem 250px 0;
+
 
 
 }
@@ -472,23 +482,23 @@ justify-content: center;
 
     .fisrt-image {
 
-        position: absolute;
+position: absolute;
         top: 35vw;
-        left: 40vw;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
+        left: 70vw;
+        width: 50%;
+        height: auto;
+        z-index: 11;
     }
 
 
     .third-image{
 
         position: absolute;
-       top: 200vw;
-        left: -40vw;
-        width: 100%;
-        height: 100%;
-        z-index: 100;
+       top: 185vw;
+        left: -20vw;
+        width: 50%;
+        height: auto;
+        z-index: 10;
     }
 }
 
