@@ -349,9 +349,29 @@ justify-content: center;
 
 /******************************************************** Leaf Picture End ***************************/
 /******************************************************** Footer Start ***************************/
+
 footer{
+  display: grid;
+ grid-column: 1/-1background-color: #3E3445;
+    background-color: #3E3445;
+    color:#FCEDD9;
 
 }
+footer ul {
+    margin:50px 150px 25px;}
+
+footer ul li{
+    text-decoration: none;
+    list-style: none;
+    font-weight: lighter;
+    padding: 0.5rem;
+
+}
+.fab{
+    margin-right: 5px;
+}
+
+
 /******************************************************** Footer End ***************************/
     /******************************************************** Main End***************************/
 
@@ -546,8 +566,16 @@ position: absolute;
         height: auto;
 
     }
+
+
+
+/******************************************************** Desctop Leaf pictures Start ***************************/
+/******************************************************** Desctop Footer Start **********************************/
+    footer{
+display: grid;
+grid-template-columns:  1fr 1fr 1fr;
+
 }
 
-
-/******************************************************** Desctop Leaf picturesStart ***************************/
+}
 /********************************************************DESCTOP VRESION END***************************************************************/

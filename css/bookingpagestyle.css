@@ -284,6 +284,31 @@ border: solid 3px #3E3445;
      color: #3E3445;
     text-decoration: none;
 }
+/******************************************************** Footer Start ***************************/
+
+footer{
+  display: grid;
+ grid-column: 1/-1background-color: #3E3445;
+    background-color: #3E3445;
+    color:#FCEDD9;
+
+}
+footer ul {
+    margin:50px 150px 25px;}
+
+footer ul li{
+    text-decoration: none;
+    list-style: none;
+    font-weight: lighter;
+    padding: 0.5rem;
+
+}
+.fab{
+    margin-right: 5px;
+}
+
+
+/******************************************************** Footer End ***************************/
 /********************************************************Main Rooms End***************************/
 /********************************************************DESCTOP VRESION START***************************************************************/
 
@@ -389,8 +414,20 @@ svg{
     .searchbtn{
         max-width: 298px;
 
-    }}
+    }
+
+    footer{
+display: grid;
+grid-template-columns:  1fr 1fr 1fr;
+
+}
+
+
+
+}
     /******************************************************** Desctop Book Your Stay End***************************/
+
+
 /******************************************************* DesctopLeaf Start***********************************/
 
 @media only screen and (min-width: 450px){
