@@ -21,7 +21,9 @@ img {
     height: auto;
 }
 
-
+button{
+    cursor: pointer;
+}
 /*******************************************************Navigation Start***************************/
 
 
@@ -70,7 +72,7 @@ nav {
 }
 
 #booking {
-    margin-top: 6rem;
+    margin-top: 8rem;
 }
 
 .move {
@@ -84,6 +86,7 @@ nav a {
     color: #3E3445;
     margin-top: 4rem;
     margin-left: 1rem;
+    font-size: 2rem;
 
 }
 
@@ -156,7 +159,12 @@ h2 {
     cursor: pointer;
     margin: 1rem;
     font-family: calder-dark-grit, sans-serif;
+    transition: all 0.5s ease-in-out;
 
+
+}
+.explore-more:hover{
+     background-color: #ED4255;
 }
 
 /********************************************************Book Your Stay Start***************************/
@@ -194,6 +202,7 @@ background-color: rgba(0, 0, 0, 0.3);
     font-size: 1rem;
     margin-bottom: 0.5rem;
 color:#FDF6EC;
+
 }
 
 .input,
@@ -204,7 +213,7 @@ color:#FDF6EC;
     color: darkgray;
     letter-spacing: 2px;
     width: 100%;
-
+cursor:pointer;
 
 }
 
@@ -220,6 +229,8 @@ color:#FDF6EC;
     letter-spacing: 2px;
     text-transform: uppercase;
     color:#3E3445 ;
+    z-index: 5000;
+
 }
 
 /********************************************************Book Your Stay End***************************/
@@ -254,6 +265,8 @@ color:#FDF6EC;
         border-top-right-radius: 10rem;
     }
 
+
+
     #concierge-services {
         background-color: #FDF6EC;
     }
@@ -274,6 +287,15 @@ color:#FDF6EC;
 
 
 }
+.name{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.source{
+    font-size:x-small;
+     margin-top:0;
+}
 .reviev{
 font-size:small;
  max-height: 168px;
@@ -293,7 +315,7 @@ justify-content: center;
     color:#3E3445;
 }
 
-    /******************************************************** Desctop Leaf picturesStart ***************************/
+    /******************************************************** Leaf Pictures Start ***************************/
 
 
 
@@ -305,8 +327,32 @@ justify-content: center;
 
     }
 
+    .fisrt-image {
 
-/******************************************************** Desctop Leaf picturesStart ***************************/
+        width: 0%;
+
+    }
+
+
+    .third-image{
+
+
+        width: 0%;
+
+
+    }
+
+
+
+
+
+
+/******************************************************** Leaf Picture End ***************************/
+/******************************************************** Footer Start ***************************/
+footer{
+
+}
+/******************************************************** Footer End ***************************/
     /******************************************************** Main End***************************/
 
 
@@ -496,9 +542,9 @@ position: absolute;
         position: absolute;
        top: 185vw;
         left: -20vw;
-        width: 50%;
+        width: 40%;
         height: auto;
-        z-index: 10;
+
     }
 }
 
