@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', getData);
 
-//const datalink = "https://annadagbjort.dk/cms-theme/bikes/wp-json/wp/v2/bike?_embed"; - thanks ;-)
+
 const datalink2 = "http://keep-it-simple.site/wp-json/wp/v2/room?_embed";
 
 function getData() {
@@ -14,10 +14,9 @@ function getData() {
   if (the_room_id) {
     fetch("http://keep-it-simple.site/wp-json/wp/v2/room/" + the_room_id + "?_embed")
       .then(res => res.json())
-      .then(showRoom) //skipping the ForEach loop - we only have one bike
+      .then(showRoom) //skipping the ForEach loop
   } else if (!the_room_id && window.location.pathname == "singleroom.html") {
-    //alert("hello");
-    //https://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-webpage
+
     window.location.replace("index.html");
   } else {
     fetch(datalink2)
