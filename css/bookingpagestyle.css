@@ -1,0 +1,443 @@
+ @import url("https://use.typekit.net/cbc0qhs.css");
+
+ * {
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background-color: #FDF6EC;
+     overflow-x: hidden;
+ }
+
+ img {
+     margin: 0;
+     max-width: 100%;
+     height: auto;
+ }
+
+ #wrapper {
+     margin: 2rem;
+ }
+button{
+    cursor: pointer;
+}
+
+ /*******************************************************Navigation Start***************************/
+header {
+     display: grid;
+     grid-template-columns: 100px 1fr;
+
+ }
+
+ header h1 {
+     background-image: url(../img/logo-BP.svg);
+     background-repeat: no-repeat;
+     width: 58px;
+     height: 61px;
+     text-indent: -9999999989px;
+     margin: 0;
+        padding: 0;
+
+ }
+
+    .desc-nav{
+
+    font-size: 0;
+}
+  svg {
+       justify-self:right;
+     z-index: 10;
+     cursor: pointer;
+     width: 50px;
+       margin-top: 25px;
+}
+nav{
+    position: absolute;
+    right:-100vw;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background-color: white;
+    transition: transform 2s;
+   overflow: hidden;
+
+
+}
+#booking{
+       margin-top: 6rem;
+}
+.move{
+    transform:translateX(-100vw);
+    overflow: hidden;}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color:#3E3445;
+    margin-top: 4rem;
+     margin-left: 1rem;
+font-size: 2rem;
+
+}
+
+nav a:hover{
+    color:#ED4255;
+    font-weight: 600;
+     overflow: hidden;
+}
+
+
+/****************************BURGER MENU*******************************/
+svg rect{
+    transition: all 0.3s;
+    transform-origin: center;
+}
+.open rect:first-child{
+  transform: translateY(30px);
+    opacity: 0;
+}
+.open rect:nth-child(2),
+.open rect:nth-child(3){
+    transition-delay: 0.3s;
+}
+rect:nth-child(2),
+rect:nth-child(3){
+    transition-delay: 0s;
+}
+.open rect:nth-child(2){
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+.open rect:nth-child(3){
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+.open rect:last-child{
+   /transform: translateY(-30px);
+     opacity: 0;
+}
+
+/****************************BURGER MENU END*******************************/
+     /********************************************************NavigationEnd***************************/
+
+
+ h2 {
+     font-family: calder-dark-grit, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     text-align: center;
+     font-size: 4rem;
+}
+
+
+ /********************************************************Book Your Stay Start***************************/
+ .bookingform {
+
+     margin-top: 2rem;
+     margin-bottom: 2rem;
+border: solid 5px #3E3445;
+     padding: 1rem;
+     border-radius: 10px;
+     box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+     z-index: 500;
+
+
+
+ }
+/*.form{
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+}*/
+ .inputgroup {
+     margin: 0.5rem;
+
+ }
+
+ .input-label {
+     display: block;
+     font-size: 1rem;
+     margin-bottom: 0.5rem;
+
+ }
+
+ .input,
+ .option
+{
+    outline: none;
+     border: none;
+      padding: 1rem;
+     color: darkgray;
+     letter-spacing: 2px;
+width: 100%;
+    cursor: pointer;
+}
+
+
+
+ .searchbtn {
+     width: 100%;
+grid-column-end: 3;
+    grid-column-start: span 2;
+     border-radius: 7px;
+     background-color: #3E3445;
+     outline: none;
+     border: none;
+   padding: 1rem;
+     letter-spacing: 2px;
+
+     text-transform: uppercase;
+     color: #FDF6EC;
+ }
+
+ /********************************************************Book Your Stay End***************************/
+/*******************************************************Leaf Start***********************************/
+.monstera{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top:75vw;
+    left:-20vw;
+transform: rotate(45deg);
+}
+.monstera2{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top:20vw;
+    left:70vw;
+transform: rotate(-130deg);
+}
+/*******************************************************Leaf Endt***********************************/
+/********************************************************Main Rooms Start***************************/
+
+ main {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+     gap: 1.5rem;
+     margin-top: 5rem;
+
+
+ }
+
+ .room,
+ .box {
+     display: flex;
+     flex-flow: column;
+ }
+
+ /*.out {
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+     overflow: hidden;
+ }
+ */
+ .img-room {
+     margin: 1;
+     padding: 0;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+
+ .room {
+     max-height: 500px;
+     background: #fff;
+     border-radius: 10px;
+     box-shadow: 3px 3px 6px #999;
+ }
+
+ .box {
+     display: grid;
+    grid-template-columns: 3fr 1fr;
+     padding:0.5rem 1rem;
+ }
+
+.box p, h3{
+   margin: 0.2rem 0;
+    color:#3E3445;
+}
+.box h3{
+    font-size: 1.5rem;
+}
+.box p{
+    font-size: 0.9rem;
+}
+.reservebtn{
+border: solid 3px #3E3445;
+      box-shadow:  0 5px 10px #999;
+     border-radius: 7px;
+     max-height: 3rem;
+     padding: 1rem;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+    margin-top: 1.5rem;
+}
+.reservebtn:hover{
+    box-shadow: inset 0 5px 10px #999;
+}
+.reservebtn a{
+
+    font-weight: bold;
+     color: #3E3445;
+    text-decoration: none;
+}
+/******************************************************** Footer Start ***************************/
+
+footer{
+  display: grid;
+ grid-column: 1/-1background-color: #3E3445;
+    background-color: #3E3445;
+    color:#FCEDD9;
+
+}
+footer ul {
+    margin:50px 150px 25px;}
+
+footer ul li{
+    text-decoration: none;
+    list-style: none;
+    font-weight: lighter;
+    padding: 0.5rem;
+
+}
+.fab{
+    margin-right: 5px;
+}
+
+
+/******************************************************** Footer End ***************************/
+/********************************************************Main Rooms End***************************/
+/********************************************************DESCTOP VRESION START***************************************************************/
+
+@media only screen and (min-width: 1035px) {
+body{
+
+background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booking-image-for%20the-right.svg);
+  background-position: left top, right top;
+  background-repeat: no-repeat, no-repeat
+  }
+
+    #wrapper{
+        margin:2rem 250px 0;
+    }
+    main{
+
+        margin:0 70px;
+    }
+
+
+  h2 {
+     font-size:3.5rem;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+ }
+    /********************************************************DEsctop Navigation Start***************************/
+
+    header{
+        display: block;
+    }
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+ header h1 {
+    background-image: url(../img/logo-large-dark.svg);
+    background-repeat: no-repeat;
+    width:146px;
+    height: 155px;
+    text-indent: -9999999989px;
+    margin: 10px;
+    padding: 0;
+
+}
+nav,
+svg{
+    display: none;
+    }
+    .desc-nav{
+    font-size: 1.5rem;
+        text-decoration: none;
+    color:#3E3445;
+ transition: all 0.5s ease-in-out;
+}
+
+    .desc-nav:hover{
+    color:#ED4255;
+
+
+}
+/*
+
+    nav{
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    right:0;
+    top:0;
+    width:100vw;
+    height:13vh;
+    background-color: rgb(255, 255, 255. 0);
+    margin-top: 2rem;
+
+
+ }
+*/
+
+  /********************************************************DEsctop NavigationEndt***************************/
+ /******************************************************** Desctop Book Your Stay Start ***************************/
+    .form{
+        display: flex;
+       justify-content: space-around;
+      align-items:center;    }
+
+     span {
+        font-size: 1rem;}
+    .inputgroup{
+        width: 100%;
+    }
+    .input-label{
+        margin-bottom: 0.2rem;
+
+    }
+        .input,
+ .option{
+
+        padding: 0.3rem;
+    }
+    .searchbtn{
+        max-width: 298px;
+
+    }
+
+    footer{
+display: grid;
+grid-template-columns:  1fr 1fr 1fr;
+
+}
+
+
+
+}
+    /******************************************************** Desctop Book Your Stay End***************************/
+
+
+/******************************************************* DesctopLeaf Start***********************************/
+
+@media only screen and (min-width: 450px){
+.monstera{
+  display: none;
+
+    }
+    .monstera2{
+  display: none;
+
+    }
+}
+/******************************************************* Desctop Leaf Endt***********************************/
