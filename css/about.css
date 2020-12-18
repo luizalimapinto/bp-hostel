@@ -1,0 +1,346 @@
+ @import url("https://use.typekit.net/cbc0qhs.css");
+
+ * {
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     background-color: #FDF6EC;
+     overflow-x: hidden;
+ }
+
+ img {
+     margin: 0;
+     max-width: 100%;
+     height: auto;
+ }
+
+ #wrapper {
+     margin: 2rem;
+ }
+
+ button {
+     cursor: pointer;
+ }
+
+.about-description {
+    margin: 0vw 3vw;
+    padding: 0vw 3vw 7vw;
+}
+
+ /*******************************************************Navigation Start***************************/
+ header {
+     display: grid;
+     grid-template-columns: 100px 1fr;
+
+ }
+
+ header h1 {
+     background-image: url(../img/logo-BP.svg);
+     background-repeat: no-repeat;
+     width: 58px;
+     height: 61px;
+     text-indent: -9999999989px;
+     margin: 0;
+     padding: 0;
+
+ }
+
+ .desc-nav {
+
+     font-size: 0;
+ }
+
+ svg {
+     justify-self: right;
+     z-index: 10;
+     cursor: pointer;
+     width: 50px;
+     margin-top: 25px;
+ }
+
+ nav {
+     position: absolute;
+     right: -100vw;
+     top: 0;
+     width: 100vw;
+     height: 100vh;
+     background-color: white;
+     transition: transform 2s;
+     overflow: hidden;
+
+
+ }
+
+ .move {
+     transform: translateX(-100vw);
+     overflow: hidden;
+ }
+
+ nav a {
+     display: block;
+     text-decoration: none;
+     color: #3E3445;
+     margin-top: 4rem;
+     margin-left: 1rem;
+     font-size: 2rem;
+
+ }
+
+ nav a:hover {
+     color: #ED4255;
+     font-weight: 600;
+     overflow: hidden;
+ }
+
+
+ /****************************BURGER MENU*******************************/
+ svg rect {
+     transition: all 0.3s;
+     transform-origin: center;
+ }
+
+ .open rect:first-child {
+     transform: translateY(30px);
+     opacity: 0;
+ }
+
+ .open rect:nth-child(2),
+ .open rect:nth-child(3) {
+     transition-delay: 0.3s;
+ }
+
+ rect:nth-child(2),
+ rect:nth-child(3) {
+     transition-delay: 0s;
+ }
+
+ .open rect:nth-child(2) {
+     transform: rotate(45deg);
+     transform-origin: center;
+ }
+
+ .open rect:nth-child(3) {
+     transform: rotate(-45deg);
+     transform-origin: center;
+ }
+
+ .open rect:last-child {
+     /transform: translateY(-30px);
+     opacity: 0;
+ }
+
+ /****************************BURGER MENU END*******************************/
+ /********************************************************NavigationEnd***************************/
+
+
+ h2 {
+     font-family: calder-dark-grit, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     text-align: center;
+     font-size: 4rem;
+ }
+
+ p {
+     font-size: 1.4rem;
+     text-align: left;
+ }
+
+
+ .monstera {
+     position: absolute;
+     width: 50%;
+     height: auto;
+     top: 75vw;
+     left: -20vw;
+     transform: rotate(45deg);
+ }
+
+ .monstera2 {
+     position: absolute;
+     width: 50%;
+     height: auto;
+     top: 20vw;
+     left: 70vw;
+     transform: rotate(-130deg);
+ }
+
+ /*******************************************************Leaf Endt***********************************/
+ /******************************************************** Footer Start ***************************/
+
+ footer {
+     display: grid;
+     grid-column: 1/-1background-color: #3E3445;
+     background-color: #3E3445;
+     color: #FCEDD9;
+
+ }
+
+ footer ul {
+     margin: 50px 150px 25px;
+ }
+
+ footer ul li {
+     text-decoration: none;
+     list-style: none;
+     font-weight: lighter;
+     padding: 0.5rem;
+
+ }
+
+ .fab {
+     margin-right: 5px;
+ }
+
+
+ /******************************************************** Footer End ***************************/
+ /********************************************************DESKTOP VERSION START***************************************************************/
+
+ @media only screen and (min-width: 1035px) {
+     body {
+
+         background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booking-image-for%20the-right.svg);
+         background-position: left top, right top;
+         background-repeat: no-repeat, no-repeat
+     }
+
+     #wrapper {
+         margin: 2rem 250px 0;
+     }
+
+     main {
+
+         margin: 0 70px;
+     }
+
+
+     h2 {
+         font-size: 3.5rem;
+         margin-top: 10rem;
+         margin-bottom: 5rem;
+     }
+
+     /********************************************************Desktop Navigation Start***************************/
+
+     header {
+         display: block;
+     }
+
+     .logo {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+
+     header h1 {
+         background-image: url(../img/logo-large-dark.svg);
+         background-repeat: no-repeat;
+         width: 146px;
+         height: 155px;
+         text-indent: -9999999989px;
+         margin: 10px;
+         padding: 0;
+
+     }
+
+     nav,
+     svg {
+         display: none;
+     }
+
+     .desc-nav {
+         font-size: 1.5rem;
+         text-decoration: none;
+         color: #3E3445;
+         transition: all 0.5s ease-in-out;
+     }
+
+     .desc-nav:hover {
+         color: #ED4255;
+
+
+     }
+
+     /*
+
+    nav{
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    right:0;
+    top:0;
+    width:100vw;
+    height:13vh;
+    background-color: rgb(255, 255, 255. 0);
+    margin-top: 2rem;
+
+
+ }
+*/
+
+     /********************************************************Desktop Navigation End ***************************/
+     /******************************************************** Desktop Book Your Stay Start ***************************/
+     .form {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+     }
+
+     span {
+         font-size: 1rem;
+     }
+
+     .inputgroup {
+         width: 100%;
+     }
+
+     .input-label {
+         margin-bottom: 0.2rem;
+
+     }
+
+     .input,
+     .option {
+
+         padding: 0.3rem;
+     }
+
+     .searchbtn {
+         max-width: 298px;
+
+     }
+
+     footer {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+
+     }
+
+
+
+ }
+
+
+
+ /******************************************************* DesktopLeaf Start***********************************/
+
+ @media only screen and (min-width: 450px) {
+     .monstera {
+         display: none;
+
+     }
+
+     .monstera2 {
+         display: none;
+
+     }
+ }
+
+ /******************************************************* Desktop Leaf End***********************************/
