@@ -1,0 +1,409 @@
+@import url("https://use.typekit.net/cbc0qhs.css");
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FDF6EC;
+    overflow-x: hidden;
+    /* background: linear-gradient(180deg, #fdcd3b 60%, #ffed4b 60%);
+      background-repeat:repeat;*/
+}
+
+img {
+
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*******************************************************Navigation Start***************************/
+
+
+header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin: 2rem 1rem 0;
+}
+
+header h1 {
+    width: 58px;
+    height: 61px;
+    text-indent: -9999999989px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.desc-nav {
+
+    font-size: 0;
+}
+
+svg {
+    justify-self: right;
+    z-index: 10;
+    cursor: pointer;
+    width: 50px;
+    margin-top: 25px;
+}
+
+nav {
+    position: absolute;
+    right: -100vw;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    transition: transform 2s;
+    overflow: hidden;
+    color: #FDF6EC;
+
+
+}
+
+#booking {
+    margin-top: 8rem;
+}
+
+.move {
+    transform: translateX(-100vw);
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #3E3445;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+
+}
+
+nav a:hover {
+    color: #ED4255;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+
+/****************************BURGER MENU*******************************/
+svg rect {
+    transition: all 0.3s;
+    transform-origin: center;
+}
+
+.open rect:first-child {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.open rect:nth-child(2),
+.open rect:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+rect:nth-child(2),
+rect:nth-child(3) {
+    transition-delay: 0s;
+}
+
+.open rect:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.open rect:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: center;
+}
+
+.open rect:last-child {
+    /transform: translateY(-30px);
+    opacity: 0;
+}
+
+/****************************BURGER MENU END*******************************/
+/********************************************************NavigationEnd***************************/
+
+
+
+h2 {
+    font-family: calder-dark-grit, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.8rem;
+
+
+}
+
+
+
+/******************************************************** Leaf Pictures Start ***************************/
+
+
+
+.second-image {
+    background: linear-gradient(180deg, #FFC83C 50%, #FDF6EC 50%);
+    background-repeat: no-repeat;
+
+
+}
+
+.fisrt-image {
+
+    width: 0%;
+
+}
+
+
+.third-image {
+
+
+    width: 0%;
+
+
+}
+
+
+
+
+
+
+/******************************************************** Leaf Picture End ***************************/
+/******************************************************** Footer Start ***************************/
+
+footer {
+    display: grid;
+    grid-column: 1/-1background-color: #3E3445;
+    background-color: #3E3445;
+    color: #FCEDD9;
+
+}
+
+footer ul {
+    margin: 50px 150px 25px;
+}
+
+footer ul li {
+    text-decoration: none;
+    list-style: none;
+    font-weight: lighter;
+    padding: 0.5rem;
+
+}
+
+.fab {
+    margin-right: 5px;
+}
+
+
+/******************************************************** Footer End ***************************/
+/******************************************************** Main End***************************/
+
+
+/************************************************************************DESCTOP VRESION START*******************************************************************/
+
+@media only screen and (min-width: 1035px) {
+    body {
+
+
+        background: linear-gradient(180deg, #FFC83C 30%, rgba(0, 0, 0, 0) 30%);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    /********************************************************DEsctop Navigation Start***************************/
+    /********************************************************DEsctop Navigation Start***************************/
+
+    #header-wrapper {
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    header {
+
+        display: block;
+        margin: 2rem 250px 0;
+
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    header h1 {
+        background-image: url(../img/logo-large-dark.svg);
+        background-repeat: no-repeat;
+        width: 146px;
+        height: 155px;
+        text-indent: -9999999989px;
+        margin: 10px;
+        padding: 0;
+
+    }
+
+    nav,
+    svg {
+        display: none;
+    }
+
+    .desc-nav {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #3E3445;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    .desc-nav:hover {
+        color: #ED4255;
+
+    }
+
+
+
+    /********************************************************DEsctop NavigationEndt***************************/
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 3rem;
+    }
+
+
+    /******************************************************** Desktop Attractions Start***************************/
+
+
+    #attractions-wrapper {
+        text-align: center;
+        padding: 17vw 20vw 5vw;
+
+
+    }
+        p{
+            font-size: 1.5rem;
+
+    }
+
+
+    #att-desc-right,
+    #att-desc-right2,
+    #att-desc-right3,
+    #att-desc-left,
+    #att-desc-left2 {
+        text-align: center;
+        padding: 5vw 20vw 5vw;
+    }
+
+    #att-desc-right {
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        text-align: left;
+    }
+
+    #att-desc-right h2 {
+        text-align: left;
+    }
+
+    #att-desc-right2 {
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        text-align: left;
+    }
+
+    #att-desc-right2 h2 {
+        text-align: left;
+    }
+    #att-desc-right3 {
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        text-align: left;
+    }
+
+    #att-desc-right3 h2 {
+        text-align: left;
+    }
+
+    #att-desc-left {
+        display: grid;
+        grid-template-columns: 1fr 600px;
+        text-align: right;
+    }
+
+    #att-desc-left h2 {
+        text-align: right;
+    }
+    #att-desc-left2 {
+        display: grid;
+        grid-template-columns: 1fr 600px;
+        text-align: right;
+    }
+
+    #att-desc-left2 h2 {
+        text-align: right;
+    }
+
+    .float-right .main-page-room-picture {
+        float: right;
+    }
+    .float-left .main-page-room-picture {
+        float: left;
+    }
+
+    .main-page-room-picture{
+    max-height: 510px;
+    border-radius: 2rem;
+}
+
+
+    /******************************************************** Desktop Attractions End***************************/
+    /******************************************************** Desktop Leaf picture Start ***************************/
+
+    .fisrt-image {
+
+        position: absolute;
+        top: 35vw;
+        left: 70vw;
+        width: 50%;
+        height: auto;
+        z-index: 11;
+    }
+
+
+    .third-image {
+
+        position: absolute;
+        top: 185vw;
+        left: -20vw;
+        width: 40%;
+        height: auto;
+
+    }
+
+
+
+    /******************************************************** Desktop Leaf pictures Start ***************************/
+    /******************************************************** Desktop Footer Start **********************************/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+}
+
+/********************************************************DESKTOP VRESION END***************************************************************/
