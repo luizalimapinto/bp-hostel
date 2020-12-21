@@ -9,7 +9,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
- background-color:#FDF6EC;
+
+background: url(../img/mobile-bg.png), linear-gradient(180deg, #FFC83C 10%,  #FDF6EC 0%);
+        background-repeat: no-repeat;
+        background-size: contain;
     overflow-x: hidden;
     /* background: linear-gradient(180deg, #fdcd3b 60%, #ffed4b 60%);
       background-repeat:repeat;*/
@@ -352,9 +355,12 @@ justify-content: center;
 
 footer{
   display: grid;
- grid-column: 1/-1background-color: #3E3445;
+ grid-column: 1/-1;
+
     background-color: #3E3445;
     color:#FCEDD9;
+       text-align: center;
+
 
 }
 footer ul {
@@ -574,8 +580,11 @@ position: absolute;
     footer{
 display: grid;
 grid-template-columns:  1fr 1fr 1fr;
+text-align: left;
 
 }
+    footer ul {
+    margin: 25px;}
 
 }
 /********************************************************DESCTOP VRESION END***************************************************************/
