@@ -9,20 +9,28 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #FDF6EC;
+    background: linear-gradient(180deg, #FFC83C 10%, #FDF6EC 10%);
     overflow-x: hidden;
     /* background: linear-gradient(180deg, #fdcd3b 60%, #ffed4b 60%);
       background-repeat:repeat;*/
 }
-#wrapper{
-    margin:1rem;
+
+#wrapper {
+    margin: 1rem;
 }
+
 img {
 
     max-width: 100%;
     height: auto;
-}
 
+}
+    .main-page-room-picture {
+        max-height: 600px;
+
+        border-radius: 2rem;
+
+    }
 button {
     cursor: pointer;
 }
@@ -36,16 +44,16 @@ header {
     margin: 2rem 1rem 0;
 }
 
- header h1 {
-     background-image: url(../img/logo-BP.svg);
-     background-repeat: no-repeat;
-     width: 58px;
-     height: 61px;
-     text-indent: -9999999989px;
-     margin: 0;
-     padding: 0;
+header h1 {
+    background-image: url(../img/logo-BP.svg);
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 61px;
+    text-indent: -9999999989px;
+    margin: 0;
+    padding: 0;
 
- }
+}
 
 .desc-nav {
 
@@ -151,7 +159,9 @@ h2 {
 
 }
 
-
+#attractions-wrapper {
+    margin: 1rem;
+}
 
 /******************************************************** Leaf Pictures Start ***************************/
 
@@ -195,8 +205,9 @@ footer {
 
 }
 
- footer ul {
-    margin: 50px 0px 25px;}
+footer ul {
+    margin: 50px 0px 25px;
+}
 
 footer ul li {
     text-decoration: none;
@@ -290,17 +301,19 @@ footer ul li {
 
     /******************************************************** Desktop Attractions Start***************************/
 
-#wrapper{
-    margin:0;
-}
+    #wrapper {
+        margin: 0;
+    }
+
     #attractions-wrapper {
         text-align: center;
         padding: 17vw 20vw 5vw;
 
 
     }
-        p{
-            font-size: 1.5rem;
+
+    p {
+        font-size: 1.5rem;
 
     }
 
@@ -316,8 +329,10 @@ footer ul li {
 
     #att-desc-right {
         display: grid;
-        grid-template-columns: 600px 1fr;
+        grid-template-columns: 400px 1fr;
         text-align: left;
+
+
     }
 
     #att-desc-right h2 {
@@ -326,13 +341,15 @@ footer ul li {
 
     #att-desc-right2 {
         display: grid;
-        grid-template-columns: 600px 1fr;
+        grid-template-columns: 300px 1fr;
+        gap: 1rem;
         text-align: left;
     }
 
     #att-desc-right2 h2 {
         text-align: left;
     }
+
     #att-desc-right3 {
         display: grid;
         grid-template-columns: 600px 1fr;
@@ -345,16 +362,18 @@ footer ul li {
 
     #att-desc-left {
         display: grid;
-        grid-template-columns: 1fr 600px;
+        grid-template-columns: 1fr 400px;
         text-align: right;
     }
 
     #att-desc-left h2 {
         text-align: right;
     }
+
     #att-desc-left2 {
         display: grid;
-        grid-template-columns: 1fr 600px;
+        grid-template-columns: 1fr 300px;
+        gap: 1rem;
         text-align: right;
     }
 
@@ -365,14 +384,17 @@ footer ul li {
     .float-right .main-page-room-picture {
         float: right;
     }
+
     .float-left .main-page-room-picture {
         float: left;
     }
 
-    .main-page-room-picture{
-    max-height: 510px;
-    border-radius: 2rem;
-}
+    .main-page-room-picture {
+        max-height: 510px;
+        max-width: 550px;
+        border-radius: 2rem;
+
+    }
 
 
     /******************************************************** Desktop Attractions End***************************/
@@ -408,8 +430,10 @@ footer ul li {
         grid-template-columns: 1fr 1fr 1fr;
 
     }
-footer ul {
-    margin: 50px 150px 25px;}
+
+    footer ul {
+        margin: 50px 150px 25px;
+    }
 }
 
 /********************************************************DESKTOP VRESION END***************************************************************/
