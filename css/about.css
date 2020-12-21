@@ -20,7 +20,7 @@
  }
 
  #wrapper {
-     margin: 2rem;
+     margin: 1rem;
  }
 
  button {
@@ -28,7 +28,7 @@
  }
 
 .about-description {
-    margin: 0vw 3vw;
+    margin: 0vw 1vw;
     padding: 0vw 3vw 7vw;
 }
 
@@ -182,8 +182,7 @@
  }
 
  footer ul {
-     margin: 50px 150px 25px;
- }
+    margin: 50px 0px 25px;}
 
  footer ul li {
      text-decoration: none;
@@ -323,7 +322,8 @@
 
      }
 
-
+footer ul {
+    margin: 50px 150px 25px;}
 
  }
 

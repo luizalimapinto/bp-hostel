@@ -21,6 +21,7 @@
 
  #wrapper {
      margin: 2rem;
+      padding-bottom: 2rem;
  }
 button{
     cursor: pointer;
@@ -30,6 +31,7 @@ button{
 header {
      display: grid;
      grid-template-columns: 100px 1fr;
+overflow-x: hidden;
 
  }
 
@@ -54,6 +56,7 @@ header {
      cursor: pointer;
      width: 50px;
        margin-top: 25px;
+       z-index: 801;
 }
 nav{
     position: absolute;
@@ -64,6 +67,8 @@ nav{
     background-color: white;
     transition: transform 2s;
    overflow: hidden;
+     z-index: 800;
+
 
 
 }
@@ -95,6 +100,7 @@ nav a:hover{
 svg rect{
     transition: all 0.3s;
     transform-origin: center;
+
 }
 .open rect:first-child{
   transform: translateY(30px);
@@ -293,8 +299,8 @@ footer{
     color:#FCEDD9;
 
 }
-footer ul {
-    margin:50px 150px 25px;}
+ footer ul {
+    margin: 50px 0px 25px;}
 
 footer ul li{
     text-decoration: none;
@@ -322,6 +328,7 @@ background-image: url(../img/booking-image-for%20the-left.svg), url(../img/booki
 
     #wrapper{
         margin:2rem 250px 0;
+
     }
     main{
 

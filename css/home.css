@@ -355,13 +355,14 @@ justify-content: center;
 
 footer{
   display: grid;
- grid-column: 1/-1background-color: #3E3445;
+ grid-column: 1/-1;
     background-color: #3E3445;
+
     color:#FCEDD9;
 
 }
 footer ul {
-    margin:50px 150px 25px;}
+    margin: 50px 0px 25px;}
 
 footer ul li{
     text-decoration: none;
@@ -385,7 +386,7 @@ footer ul li{
    body{
 
 
-background: url(../img/poster2.svg), linear-gradient(180deg, #FFC83C 30%, rgba(0, 0, 0, 0) 30%);
+background: url(../img/poster2.svg), linear-gradient(180deg, #FFC83C 30%, #FAEDDB 0%);
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -580,6 +581,7 @@ grid-template-columns:  1fr 1fr 1fr;
 
 }
 
-
+footer ul {
+    margin: 50px 150px 25px;}
 }
 /********************************************************DESCTOP VRESION END***************************************************************/

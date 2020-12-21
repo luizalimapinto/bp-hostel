@@ -16,7 +16,7 @@
      margin: 0;
      padding: 0;
      background-image: url(../img/mobile-background-single-room.svg);
-
+  overflow-x: hidden;
 
  }
 
@@ -29,6 +29,7 @@
 
  #wrapper {
      background: rgba(255, 255, 255, 0.8);
+    padding-bottom: 2rem;
 
 
  }
@@ -213,8 +214,8 @@ footer{
     color:#FCEDD9;
 
 }
-footer ul {
-    margin:50px 150px 25px;}
+ footer ul {
+    margin: 50px 0px 25px;}
 
 footer ul li{
     text-decoration: none;
@@ -307,7 +308,8 @@ display: grid;
 grid-template-columns:  1fr 1fr 1fr;
 
 }
-
+footer ul {
+    margin: 50px 150px 25px;}
 
  }
 
